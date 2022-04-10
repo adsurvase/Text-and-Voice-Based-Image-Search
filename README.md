@@ -116,21 +116,24 @@ The upload functionality takes an image from the user's local system and uploads
     
  ### 6. Implement voice accessibility in front end
     a. Give the frontend user the choice to use voice rather than text to perform the search.
-    b. Use Amazon Transcribe10 on the frontend to transcribe speech to text(STT) in real time11, then use the transcribed text to perform the search,
-       using the same API like in the previous steps.
-    c. Note: You can use a Google-like UI (see below) for implementing the search: input field for text searches and 2. microphone icon for voice 		   interactions.
+    b. Use Amazon Transcribe10 on the frontend to transcribe speech to text(STT) in real time11, then use the 
+       transcribed text to perform the search, using the same API like in the previous steps.
+    c. Note: You can use a Google-like UI (see below) for implementing the search: input field for text searches and 
+       microphone icon for voice interactions
     
 ### 7. Deploy using code pipeline
     a. Define a pipeline (P1) in AWS CodePipeline that builds and deploys the code for/to all your Lambda functions
     b. Define a pipeline (P2) in AWS CodePipeline that builds and deploys your frontend code to its corresponding S3 bucket
     
 ### 8. Create a AWS CloudFormation template for the stack
-    a. Create a CloudFormation template (T1) to represent all the infrastructure resources (ex. Lambdas, ElasticSearch, API Gateway, CodePipeline, 		   etc.) and permissions (IAM policies, roles, etc.).
+    a. Create a CloudFormation template (T1) to represent all the infrastructure resources (ex. Lambdas, 
+       ElasticSearch, API Gateway, CodePipeline etc.) and permissions (IAM policies, roles, etc.).
 
     At this point you should be able to:
       1. Visit your photo album application using the S3 hosted URL.
       2. Search photos using natural language via voice and text.
-      3. See relevant results (ex. If you searched for a cat, you should be able to see photos with cats in them) based on what you searched.
+      3. See relevant results (ex. If you searched for a cat, you should be able to see photos with cats in them) 
+         based on what you searched.
       4. Upload new photos (with or without custom labels) and see them appear in the search results.
       
       

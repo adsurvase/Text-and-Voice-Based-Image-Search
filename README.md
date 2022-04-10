@@ -1,10 +1,10 @@
 # text-and-voice-based-image-search
-# Description
+## Description
 "Text and Voice based Image Search" is a serverless, microservice driven web-based application, that can be used to search images using natural language processing through both text and voice. We can upload and search photos similar to an image search engine. It is designed using multiple AWS components :-
 
 AWS Transcribe, API-Gateway, Swagger, S3-Buckets, Lambda Functions, ElasticSearch, AWS Lex, AWS Rekognition, Cloud watch, Code Pipeline, Cloud Formation
 
-# Working
+## Working
 Searching for an image:
 
 The Search keywords picked from the user query are sent to AWS Lex which identifies the labels and sends them to the Elastic Search for searching the corresponding indices. Depending on the search results, all the images having those tags are returned. 
@@ -17,12 +17,12 @@ The upload functionality takes an image from the user's local system and uploads
 
 ![WhatsApp Image 2022-04-09 at 8 03 30 PM](https://user-images.githubusercontent.com/17768756/162596466-2e28b221-a3c1-4fd4-88e9-f14f987662e5.jpeg)
 
-# Architecture
+## Architecture
 
 
 <img width="764" alt="ArchitectureDiagram" src="https://user-images.githubusercontent.com/17768756/162595845-9d2ebd3a-d5bc-418a-998c-faf0b7201e24.png">
 
-# Steps
+## Steps
 
 ### 1. Launch an ElasticSearch instance
     a. Using AWS ElasticSearch service , create a new domain called “photos”
